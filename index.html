@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <!-- Technical SEO & Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Premium Taxi Service in Amritsar | Harry Tours and Travels</title>
+    <meta name="description" content="Book premium, reliable, and affordable taxi services in Amritsar. Airport transfers, local sightseeing, Golden Temple tours, and outstation cabs. Available 24/7.">
+    
+    <!-- Google Fonts & Custom Nokia Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://db.onlinewebfonts.com/c/440b53b1a1c65037f944ff19259d8014?family=Nokia+Cellphone+FC+Small');
+    </style>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFC107', /* Vibrant Taxi Yellow */
+                        secondary: '#111111',
+                        accent: '#0B5FFF',
+                        card: '#F8F9FA',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['"Instrument Serif"', 'serif'],
+                        nokia: ['"Nokia Cellphone FC Small"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles for Animations & Patterns -->
+    <style>
+        /* Fun Custom Cursor */
+        body {
+            cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><text y='24' font-size='24'>🚖</text></svg>") 16 16, auto;
+        }
+
+        a, button, select, input, .cursor-pointer {
+            cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><text y='24' font-size='24'>👆</text></svg>") 16 0, pointer;
+        }
+
+        /* Animated Subtle Premium Texture Pattern */
+        .bg-texture {
+            background-color: #fcfcfc;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23FFC107' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='1.5'/%3E%3Ccircle cx='13' cy='13' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+            animation: slide-dots 15s linear infinite;
+        }
+
+        @keyframes slide-dots {
+            0% { background-position: 0 0; }
+            100% { background-position: 20px 20px; }
+        }
+
+        /* Fun Animated Taxi Pattern */
+        .bg-taxi-pattern {
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'><text y='30' font-size='20'>🚖</text></svg>");
+            background-size: 60px 60px;
+            animation: drive-taxis 4s linear infinite;
+        }
+
+        @keyframes drive-taxis {
+            0% { background-position: 0 0; }
+            100% { background-position: -60px 0; }
+        }
+
+        /* Smooth Floating Animation */
+        @keyframes float-gentle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+        .animate-float {
+            animation: float-gentle 4s ease-in-out infinite;
+        }
+
+        /* Infinite Marquee Animation for Reviews */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-50% - 0.75rem)); }
+        }
+        
+        .animate-marquee {
+            display: flex;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+        }
+
+        .marquee-container:hover .animate-marquee {
+            animation-play-state: paused;
+        }
+
+        .marquee-container {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .marquee-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Blinking Cursor for Typing Effect */
+        .blinking-cursor {
+            animation: blink 0.8s linear infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        /* Hero Enter Animations */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-scale-in {
+            animation: scaleIn 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .animate-fade-up {
+            opacity: 0;
+            animation: fadeUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+        }
+    </style>
+</head>
+<body class="font-sans text-secondary bg-white antialiased selection:bg-primary selection:text-secondary pb-20 md:pb-0">
+
+    <!-- DESKTOP FLOATING PILL NAVBAR -->
+    <div class="fixed top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-5xl z-50 pointer-events-none">
+        <nav class="pointer-events-auto backdrop-blur-md rounded-full bg-[#0a192f]/80 border border-white/10 flex justify-between items-center px-6 py-3 shadow-2xl">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center cursor-pointer">
+                <span class="font-heading italic font-bold text-3xl tracking-tight text-white">
+                    Harry<span class="text-primary not-italic">Tours</span>
+                </span>
+            </div>
+            <!-- Links -->
+            <div class="hidden md:flex space-x-10">
+                <a href="#services" class="text-[14px] text-gray-200 hover:text-primary transition-opacity hover:opacity-80">Services</a>
+                <a href="#tours" class="text-[14px] text-gray-200 hover:text-primary transition-opacity hover:opacity-80">Cultural Tours</a>
+                <a href="#fleet" class="text-[14px] text-gray-200 hover:text-primary transition-opacity hover:opacity-80">Our Fleet</a>
+                <a href="#reviews" class="text-[14px] text-gray-200 hover:text-primary transition-opacity hover:opacity-80">Reviews</a>
+            </div>
+            <!-- Glint CTA Button -->
+            <div class="hidden md:block">
+                <a href="tel:9103556223" class="group relative overflow-hidden bg-primary rounded-full px-6 py-2.5 flex items-center justify-center font-sans text-[14px] text-[#1a1a1a] font-semibold shadow-[inset_0_-4px_4px_rgba(255,255,255,0.4)] outline-1 outline-primary -outline-offset-1 transition-transform active:scale-95">
+                    <!-- Top Glint -->
+                    <div class="absolute w-[80%] h-4 left-[10%] top-[1px] bg-gradient-to-b from-[#ffffff] to-transparent rounded-[12px] opacity-70 group-hover:scale-x-105 transition-transform duration-300"></div>
+                    <span class="relative z-10 flex items-center gap-2"><i class="fa-solid fa-phone text-xs"></i> 9103556223</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- MOBILE STICKY BOTTOM NAV -->
+    <nav class="md:hidden fixed bottom-0 left-0 w-full bg-[#0a192f] border-t border-white/10 z-50 pb-safe shadow-[0_-4px_20px_rgba(0,0,0,0.2)]">
+        <div class="grid grid-cols-4 h-16">
+            <a href="tel:9103556223" class="flex flex-col items-center justify-center text-primary hover:bg-white/5 transition-colors">
+                <i class="fa-solid fa-phone text-xl mb-1"></i>
+                <span class="text-[10px] font-medium mt-1">Call Now</span>
+            </a>
+            <a href="https://wa.me/919103556223" class="flex flex-col items-center justify-center text-green-400 hover:bg-white/5 transition-colors">
+                <i class="fa-brands fa-whatsapp text-xl mb-1"></i>
+                <span class="text-[10px] font-medium mt-1">WhatsApp</span>
+            </a>
+            <a href="https://maps.google.com/..." class="flex flex-col items-center justify-center text-gray-300 hover:bg-white/5 transition-colors">
+                <i class="fa-solid fa-location-arrow text-xl mb-1"></i>
+                <span class="text-[10px] font-medium mt-1">Directions</span>
+            </a>
+            <a href="#tours" class="flex flex-col items-center justify-center text-[#1a1a1a] bg-primary hover:bg-yellow-500 transition-colors">
+                <i class="fa-solid fa-taxi text-xl mb-1"></i>
+                <span class="text-[10px] font-medium mt-1">Book Taxi</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Cultural Roots & Instrument Serif) -->
+    <section class="relative min-h-screen pt-32 pb-20 flex flex-col justify-center items-center overflow-hidden bg-[#1a1a1a]">
+        <!-- High-Res Background Image (Simulating Video Background) -->
+        <div class="absolute inset-0 z-0">
+            <!-- Amritsar Golden Temple Background -->
+            <img src="https://images.unsplash.com/photo-1587313632749-db3722283995?auto=format&fit=crop&w=1920&q=80" alt="Golden Temple Amritsar" class="w-full h-full object-cover scale-105 animate-[slide-dots_30s_linear_infinite_alternate]">
+            <!-- Dark tinted overlay to ensure text readability while keeping warm tones -->
+            <div class="absolute inset-0 bg-gradient-to-b from-[#0a192f]/90 via-[#0a192f]/70 to-[#111111]/90"></div>
+        </div>
+
+        <div class="relative z-20 text-center px-4 w-full max-w-5xl mx-auto flex flex-col items-center pointer-events-none mt-12">
+            
+            <!-- Main Headline in Instrument Serif -->
+            <h1 class="font-heading text-[50px] md:text-[72px] lg:text-[96px] leading-[0.9] tracking-tight text-white mb-6 animate-scale-in drop-shadow-lg">
+                Explore Punjab. <br /> <span class="text-primary italic">Travel in Comfort.</span>
+            </h1>
+            
+            <!-- Sub-headline -->
+            <p class="font-sans text-[16px] md:text-[20px] text-gray-300 leading-relaxed font-normal max-w-2xl mx-auto animate-fade-up">
+                Rooted in Amritsar. Premium taxi services, cultural tours, and instant booking. A seamless rhythm to your journey across North India.
+            </p>
+
+            <!-- Typing Messages Overlay (Simulating the Phone Screen UI requested) -->
+            <div class="mt-16 pointer-events-auto relative">
+                <!-- Phone-like glass container -->
+                <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6 w-[280px] sm:w-[320px] shadow-2xl flex flex-col items-start text-left">
+                    <div class="w-full flex justify-between items-center mb-4 border-b border-white/10 pb-2">
+                        <span class="text-white/50 text-xs font-sans">Live Chat</span>
+                        <div class="flex gap-1.5">
+                            <div class="w-2.5 h-2.5 rounded-full bg-red-400"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-yellow-400"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-green-400"></div>
+                        </div>
+                    </div>
+                    <!-- Typing Text -->
+                    <div class="bg-primary text-[#1a1a1a] px-4 py-3 rounded-2xl rounded-tl-sm w-[90%] shadow-lg">
+                        <span id="typing-text" class="font-nokia text-[12px] sm:text-[14px] leading-tight break-words min-h-[1.5em]"></span><span class="inline-block w-1.5 h-3 bg-[#1a1a1a] ml-1 align-middle blinking-cursor"></span>
+                    </div>
+                    <a href="tel:9103556223" class="mt-6 w-full bg-white text-secondary text-center py-3 rounded-xl font-bold font-sans text-sm hover:bg-gray-100 transition-colors shadow-lg">
+                        Book Your Ride Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR TOURS (Cultural Focus) -->
+    <section id="tours" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center text-center mb-16">
+                <h2 class="font-heading text-5xl md:text-6xl font-bold mb-4 text-[#1a1a1a]">Cultural Tour Packages</h2>
+                <p class="text-gray-500 max-w-2xl font-sans text-lg">Curated itineraries deeply rooted in the heritage of North India.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tour 1: Local Amritsar -->
+                <div class="bg-card rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer p-3">
+                    <div class="h-64 overflow-hidden relative rounded-3xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
+                        <img src="https://amritsartourism.org.in/images/places-to-visit/headers/places-to-visit-in-amritsar-header-amritsar-tourism.jpg.jpg" alt="Golden Temple Amritsar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute bottom-6 left-6 z-20">
+                            <span class="bg-primary text-secondary text-xs font-bold px-3 py-1 rounded-full mb-2 inline-block">Best Seller</span>
+                            <h3 class="text-white font-heading text-3xl">Spiritual Amritsar</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500 font-medium mb-3 font-sans">PERFECT FOR A DAY TRIP</p>
+                        <p class="text-gray-600 text-sm mb-6 line-clamp-2">Experience the divine Golden Temple, Wagah Border retreat, and savor authentic Punjabi cuisine.</p>
+                        <button class="w-full bg-secondary text-white py-3.5 rounded-xl font-bold font-sans hover:bg-primary hover:text-secondary transition-colors">Book Tour</button>
+                    </div>
+                </div>
+
+                <!-- Tour 2: Himachal -->
+                <div class="bg-card rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer p-3">
+                    <div class="h-64 overflow-hidden relative rounded-3xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
+                        <img src="https://imgs.search.brave.com/orlpRW7_lJ0NS-P2Gd00a2xJwhMPgm52vecTTBAkHzE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDk4/Nzc0NjkzL3Bob3Rv/L21jbGVvZGdhbmot/YXQtbmlnaHQuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPUVL/SUZOMVB5YmY3ek5K/QlQxbUwtcl83a2xw/VV91MHNkdi1VVkdw/SXlEZzA9" alt="Himachal Tour" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute bottom-6 left-6 z-20">
+                            <h3 class="text-white font-heading text-3xl">Himachal Hills</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500 font-medium mb-3 font-sans">OUTSTATION GETAWAY</p>
+                        <p class="text-gray-600 text-sm mb-6 line-clamp-2">Escape to the serene mountains of Dalhousie and Dharamshala in our comfortable SUVs.</p>
+                        <button class="w-full bg-secondary text-white py-3.5 rounded-xl font-bold font-sans hover:bg-primary hover:text-secondary transition-colors">Get Quote</button>
+                    </div>
+                </div>
+
+                <!-- Tour 3: Rajasthan -->
+                <div class="bg-card rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer p-3">
+                    <div class="h-64 overflow-hidden relative rounded-3xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
+                        <img src="https://imgs.search.brave.com/7UQ-KNRisr_nB_AOZkHvHUWi1yC2YpsvEHtMKSlVlFs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/dHJhdmVsdHJpYW5n/bGUuY29tL2FwYWMv/YXR0YWNobWVudHMv/cGljdHVyZXMvODgy/NzYzL29yaWdpbmFs/LzFzdF9tZWhyYW5n/YXJoX2ZvcnRfTElO/S18xLmpwZz90cj13/LTY4MCxoLTQwMA" alt="Rajasthan Tour" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute bottom-6 left-6 z-20">
+                            <h3 class="text-white font-heading text-3xl">Royal Rajasthan</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500 font-medium mb-3 font-sans">LONG DISTANCE TOUR</p>
+                        <p class="text-gray-600 text-sm mb-6 line-clamp-2">A majestic road trip through the palaces and forts of Rajasthan with verified, expert drivers.</p>
+                        <button class="w-full bg-secondary text-white py-3.5 rounded-xl font-bold font-sans hover:bg-primary hover:text-secondary transition-colors">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLEET SECTION WITH ANIMATED TEXTURE -->
+    <section id="fleet" class="py-24 bg-texture border-y border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-5xl md:text-6xl font-bold mb-4 text-[#1a1a1a]">Our Premium Fleet</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto font-sans text-lg">Well-maintained, clean, and sanitized yellow-plate vehicles ready for your journey.</p>
+            </div>
+
+            <div class="space-y-12">
+                
+                <!-- CAR 1: Innova Crysta -->
+                <div class="flex flex-col md:flex-row bg-white rounded-[2rem] border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer p-4 gap-6">
+                    <div class="w-full md:w-1/2 h-64 md:h-auto relative overflow-hidden rounded-2xl bg-gray-50">
+                        <img src="https://imgs.search.brave.com/qIxlE-95GgNAp4GqMhy2H7QTwi4eanRAWR7QUGOphKc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdk/LmFlcGxjZG4uY29t/LzEwNTZ4NTk0L24v/Y3cvZWMvMTQwODA5/L2lubm92YS1jcnlz/dGEtZXh0ZXJpb3It/cmlnaHQtZnJvbnQt/dGhyZWUtcXVhcnRl/ci0zLnBuZz9pc2ln/PTAmcT04MCZ3bT0x" alt="Innova Crysta Premium SUV" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply p-4">
+                    </div>
+                    <div class="w-full md:w-1/2 p-6 flex flex-col justify-center">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-heading text-3xl md:text-4xl font-bold text-[#1a1a1a]">Toyota Innova Crysta</h3>
+                                <p class="text-gray-500 font-medium font-sans text-sm mt-1">Premium SUV</p>
+                            </div>
+                            <span class="bg-primary text-secondary px-4 py-1.5 rounded-full text-xs font-bold shadow-sm">Most Popular</span>
+                        </div>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+                            <div class="flex flex-col text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100 text-center hover:border-primary transition-colors">
+                                <i class="fa-solid fa-users text-lg mb-1 text-primary"></i>
+                                <span class="text-xs font-bold">7 Seats</span>
+                            </div>
+                            <div class="flex flex-col text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100 text-center hover:border-primary transition-colors">
+                                <i class="fa-solid fa-snowflake text-lg mb-1 text-primary"></i>
+                                <span class="text-xs font-bold">Rear A/C</span>
+                            </div>
+                            <div class="flex flex-col text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100 text-center hover:border-primary transition-colors">
+                                <i class="fa-solid fa-suitcase text-lg mb-1 text-primary"></i>
+                                <span class="text-xs font-bold">4 Bags</span>
+                            </div>
+                            <div class="flex flex-col text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100 text-center hover:border-primary transition-colors">
+                                <i class="fa-solid fa-crown text-lg mb-1 text-primary"></i>
+                                <span class="text-xs font-bold">Luxury</span>
+                            </div>
+                        </div>
+                        <a href="tel:9103556223" class="bg-[#1a1a1a] text-white px-8 py-3.5 rounded-xl font-bold font-sans hover:bg-primary hover:text-[#1a1a1a] transition-colors w-max text-center">Book Innova Crysta</a>
+                    </div>
+                </div>
+
+                <!-- CAR 2: Ertiga -->
+                <div class="flex flex-col md:flex-row-reverse bg-white rounded-[2rem] border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer p-4 gap-6">
+                    <div class="w-full md:w-1/2 h-64 md:h-auto relative overflow-hidden rounded-2xl bg-gray-50">
+                        <img src="https://stimg.cardekho.com/images/car-images/930x620/Maruti/Ertiga/10288/1760527558211/Arctic-White_c5c5c5.jpg" alt="Ertiga SUV" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply p-4">
+                    </div>
+                    <div class="w-full md:w-1/2 p-6 flex flex-col justify-center">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-heading text-3xl md:text-4xl font-bold text-[#1a1a1a]">Maruti Suzuki Ertiga</h3>
+                                <p class="text-gray-500 font-medium font-sans text-sm mt-1">Family MUV</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+                            <div class="flex flex-col text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100 text-center hover:border-primary transition-colors">
+                                <i class="fa-solid fa-users text-lg mb-1 text-primary"></i>
+                                <span class="text-xs font-bold">6 Seats</span>
+                            </div>
+                            <div class="flex flex-col text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100 text-center hover:border-primary transition-colors">
+                                <i class="fa-solid fa-snowflake text-lg mb-1 text-primary"></i>
+                                <span class="text-xs font-bold">Dual A/C</span>
+                            </div>
+                            <div class="flex flex-col text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100 text-center hover:border-primary transition-colors">
+                                <i class="fa-solid fa-suitcase text-lg mb-1 text-primary"></i>
+                                <span class="text-xs font-bold">3 Bags</span>
+                            </div>
+                            <div class="flex flex-col text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100 text-center hover:border-primary transition-colors">
+                                <i class="fa-solid fa-shield-check text-lg mb-1 text-primary"></i>
+                                <span class="text-xs font-bold">Comfort</span>
+                            </div>
+                        </div>
+                        <a href="tel:9103556223" class="bg-[#1a1a1a] text-white px-8 py-3.5 rounded-xl font-bold font-sans hover:bg-primary hover:text-[#1a1a1a] transition-colors w-max text-center">Book Ertiga</a>
+                    </div>
+                </div>
+
+                <!-- CAR 3: Swift Dzire -->
+                <div class="flex flex-col md:flex-row bg-white rounded-[2rem] border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer p-4 gap-6">
+                    <div class="w-full md:w-1/2 h-64 md:h-auto relative overflow-hidden rounded-2xl bg-gray-50">
+                        <img src="https://imgs.search.brave.com/VK2CTS8_HOypj6qP76b9f9TxI3lrXsfRAMPAFlBd0n8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS56aWdjZG4uY29t/L21lZGlhL21vZGVs/LzIwMjQvSnVuL21h/cnV0aS1zd2lmdC1k/emlyZS10b3VyXzYw/MHg0MDAuanBn" alt="Swift Dzire Sedan" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply p-4">
+                    </div>
+                    <div class="w-full md:w-1/2 p-6 flex flex-col justify-center">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-heading text-3xl md:text-4xl font-bold text-[#1a1a1a]">Maruti Swift Dzire</h3>
+                                <p class="text-gray-500 font-medium font-sans text-sm mt-1">Comfortable Sedan</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+                            <div class="flex flex-col text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100 text-center hover:border-primary transition-colors">
+                                <i class="fa-solid fa-users text-lg mb-1 text-primary"></i>
+                                <span class="text-xs font-bold">4 Seats</span>
+                            </div>
+                            <div class="flex flex-col text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100 text-center hover:border-primary transition-colors">
+                                <i class="fa-solid fa-snowflake text-lg mb-1 text-primary"></i>
+                                <span class="text-xs font-bold">A/C</span>
+                            </div>
+                            <div class="flex flex-col text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100 text-center hover:border-primary transition-colors">
+                                <i class="fa-solid fa-suitcase text-lg mb-1 text-primary"></i>
+                                <span class="text-xs font-bold">2 Bags</span>
+                            </div>
+                            <div class="flex flex-col text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100 text-center hover:border-primary transition-colors">
+                                <i class="fa-solid fa-star text-lg mb-1 text-primary"></i>
+                                <span class="text-xs font-bold">Economy</span>
+                            </div>
+                        </div>
+                        <a href="tel:9103556223" class="bg-[#1a1a1a] text-white px-8 py-3.5 rounded-xl font-bold font-sans hover:bg-primary hover:text-[#1a1a1a] transition-colors w-max text-center">Book Swift Dzire</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section id="reviews" class="py-24 bg-[#0a192f] text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-2">Trusted by Travelers</h2>
+                    <div class="flex items-center justify-center md:justify-start space-x-2 mt-3">
+                        <span class="text-primary text-xl">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="font-bold text-xl font-sans">4.9/5</span>
+                        <span class="text-gray-400 text-sm font-sans">(128 Google Reviews)</span>
+                    </div>
+                </div>
+                <a href="https://www.google.com/maps/place/Harry+Tours+and+Travels..." target="_blank" class="border border-white/20 hover:bg-white/10 text-white px-6 py-3 rounded-full font-bold font-sans transition-colors flex items-center">
+                    <i class="fa-brands fa-google mr-2 text-primary"></i> View All on Google
+                </a>
+            </div>
+        </div>
+
+        <!-- Marquee Container -->
+        <div class="marquee-container w-full overflow-hidden cursor-pointer relative py-4">
+            <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0a192f] to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0a192f] to-transparent z-10 pointer-events-none"></div>
+            
+            <div class="animate-marquee gap-6 pl-6">
+                <!-- SET 1 -->
+                <div class="w-80 sm:w-96 shrink-0 bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-colors">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-primary text-secondary rounded-full flex items-center justify-center font-bold font-heading text-2xl">S</div>
+                        <div>
+                            <h4 class="font-bold font-sans">Sandeep Kumar</h4>
+                            <div class="text-primary text-xs mt-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed font-sans">"Excellent service provided by Harry tours and travels. The Innova Crysta was brand new and the driver was very polite. Highly recommended."</p>
+                </div>
+
+                <div class="w-80 sm:w-96 shrink-0 bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-colors">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-white text-secondary rounded-full flex items-center justify-center font-bold font-heading text-2xl">P</div>
+                        <div>
+                            <h4 class="font-bold font-sans">Priya Sharma</h4>
+                            <div class="text-primary text-xs mt-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed font-sans">"Booked them for airport pickup at midnight. The driver was already waiting before we landed. Very professional and safe driving."</p>
+                </div>
+
+                <div class="w-80 sm:w-96 shrink-0 bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-colors">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-primary text-secondary rounded-full flex items-center justify-center font-bold font-heading text-2xl">R</div>
+                        <div>
+                            <h4 class="font-bold font-sans">Rahul G.</h4>
+                            <div class="text-primary text-xs mt-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed font-sans">"Best taxi service in Amritsar for local sightseeing. We covered Golden Temple, Wagah Border and local markets. Great guide."</p>
+                </div>
+                
+                <!-- SET 2 -->
+                <div class="w-80 sm:w-96 shrink-0 bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-colors">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-white text-secondary rounded-full flex items-center justify-center font-bold font-heading text-2xl">A</div>
+                        <div>
+                            <h4 class="font-bold font-sans">Amit Singh</h4>
+                            <div class="text-primary text-xs mt-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed font-sans">"Booked the Ertiga for my family. The car was spotless, and the AC was perfect for the heat. Driver arrived exactly on time."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM CTA WITH FUN ANIMATED TAXI PATTERN -->
+    <section class="py-24 bg-primary relative overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none bg-taxi-pattern"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="font-heading text-5xl md:text-7xl font-bold text-secondary mb-6 tracking-tight">Need a ride right now?</h2>
+            <p class="text-secondary/80 text-lg md:text-xl mb-12 font-sans max-w-lg mx-auto">Your premium taxi service across Amritsar and Punjab is just a tap away.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="tel:9103556223" class="w-full sm:w-auto bg-secondary text-primary px-10 py-4 rounded-full font-bold font-sans text-lg hover:bg-black transition-all shadow-2xl flex items-center justify-center transform active:scale-95">
+                    <i class="fa-solid fa-phone mr-3"></i> 9103556223
+                </a>
+                <a href="https://wa.me/919103556223" class="w-full sm:w-auto bg-green-500 text-white px-10 py-4 rounded-full font-bold font-sans text-lg hover:bg-green-600 transition-all shadow-2xl flex items-center justify-center transform active:scale-95">
+                    <i class="fa-brands fa-whatsapp mr-3"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-secondary text-white py-12 pb-24 md:pb-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="font-heading italic font-bold text-2xl text-white">Harry<span class="text-primary not-italic">Tours</span></span>
+            </div>
+            <p class="text-sm text-gray-500 font-sans">&copy; 2026 Harry Tours and Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Typing Effect Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const messages = [
+                "Need a ride to the Golden Temple?", 
+                "We are available 24/7.", 
+                "Book your comfortable ride.",
+                "Explore the true culture of Punjab."
+            ];
+            let messageIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            const typeSpeed = 100;
+            const deleteSpeed = 50;
+            const pauseTime = 2000;
+            const typingElement = document.getElementById('typing-text');
+
+            function type() {
+                const currentMessage = messages[messageIndex];
+                
+                if (isDeleting) {
+                    typingElement.textContent = currentMessage.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typingElement.textContent = currentMessage.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                let setTimeoutSpeed = isDeleting ? deleteSpeed : typeSpeed;
+
+                if (!isDeleting && charIndex === currentMessage.length) {
+                    isDeleting = true;
+                    setTimeoutSpeed = pauseTime;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    messageIndex = (messageIndex + 1) % messages.length;
+                }
+
+                setTimeout(type, setTimeoutSpeed);
+            }
+
+            // Start typing effect after a small delay
+            setTimeout(type, 1000);
+        });
+    </script>
+</body>
+</html>
